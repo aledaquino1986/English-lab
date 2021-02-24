@@ -2,6 +2,7 @@ import React from "react";
 import SecondaryHeading from "../atoms/h2-heading/SecondaryHeading";
 import TertiaryHeading from "../atoms/h3-heading/TertiaryHeading";
 import SmallButton from "../atoms/small-button/SmallButton";
+import CompositionPhotos from "../atoms/composition-photo/CompositionPhoto";
 
 const About = () => {
   return (
@@ -35,7 +36,9 @@ const About = () => {
           </p>
           <SmallButton text={"Learn More"} />
         </div>
-        <div className="col-1-of-2"></div>
+        <div className="col-1-of-2">
+          <CompositionPhotos />
+        </div>
       </div>
     </section>
   );
