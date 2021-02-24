@@ -1,0 +1,30 @@
+.text-box {
+  text-align: center;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+
+  .heading {
+    position: relative;
+
+    &__primary-main {
+      animation: moveInLeft 3s ease-out;
+    }
+
+    &__primary-sub {
+      animation: moveInRight 3s ease-out 0.75s;
+      animation-fill-mode: backwards;
+    }
+
+    &__primary-main,
+    &__primary-sub {
+      display: block;
+    }
+  }
+
+  &_primary-main {
+    animation: moveInLeft 2s ease-out;
+  }
+}

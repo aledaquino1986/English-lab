@@ -1,0 +1,23 @@
+header {
+  height: 95vh;
+  background-image: linear-gradient(
+      to right top,
+      rgba($color-primary, 0.5),
+      $color-secondary
+    ),
+    url("../../assets/images/class-header.jpg");
+  background-size: cover;
+  background-position: top;
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+
+  .logo-box {
+    position: relative;
+
+    .logo {
+      position: absolute;
+      top: -3rem;
+      left: 3rem;
+      max-width: 300px;
+    }
+  }
+}
