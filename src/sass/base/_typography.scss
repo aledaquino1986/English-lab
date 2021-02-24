@@ -3,16 +3,3 @@ body {
   font-size: 1.6rem;
   line-height: 1.7;
 }
-
-.heading {
-  color: $color-gray-light;
-  font-size: 6rem;
-  font-weight: 400;
-  letter-spacing: 2rem;
-
-  &__primary-sub {
-    font-size: 2rem;
-    font-weight: 800;
-    letter-spacing: 2.3rem;
-  }
-}

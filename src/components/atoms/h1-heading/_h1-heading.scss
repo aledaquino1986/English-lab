@@ -8,6 +8,10 @@
 
   .heading {
     position: relative;
+    color: $color-gray-light;
+    font-size: 6rem;
+    font-weight: 400;
+    letter-spacing: 2rem;
 
     &__primary-main {
       animation: moveInLeft 3s ease-out;
@@ -16,6 +20,9 @@
     &__primary-sub {
       animation: moveInRight 3s ease-out 0.75s;
       animation-fill-mode: backwards;
+      font-size: 2rem;
+      font-weight: 800;
+      letter-spacing: 2.3rem;
     }
 
     &__primary-main,

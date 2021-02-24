@@ -7,9 +7,15 @@
 @import "base/typography";
 @import "base/utilities";
 
+@import "./layout/grid";
+
 @import "../components/atoms/h1-heading/h1-heading";
+@import "../components/atoms/h2-heading/h2-heading";
+@import "../components/atoms/h3-heading/h3-heading";
 
-@import "../components/header/header.scss";
+@import "../components/header/header";
+@import "../components/about/about";
 @import "../components/atoms/button/button";
+@import "../components/atoms/small-button/small-button";
 
-@import "../pages/homepage.style.scss";
+@import "../pages/homepage";
