@@ -6,17 +6,18 @@
 @import "base/animation";
 @import "base/typography";
 @import "base/utilities";
+@import "abstract/variables";
 
 @import "./layout/grid";
 
 @import "../components/atoms/h1-heading/h1-heading";
 @import "../components/atoms/h2-heading/h2-heading";
 @import "../components/atoms/h3-heading/h3-heading";
-
-@import "../components/header/header";
-@import "../components/about/about";
+@import "../components/atoms/feature-box/feature-box.scss";
 @import "../components/atoms/button/button";
 @import "../components/atoms/small-button/small-button";
 @import "../components/atoms/composition-photo/composition_photo";
-
+@import "../components/header/header";
+@import "../components/about/about";
+@import "../components/features/features";
 @import "../pages/homepage";

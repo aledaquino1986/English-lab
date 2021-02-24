@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAAA,iBAAiB,CAAC;EAChB,SAAS,EAAE,MAAM;EACjB,WAAW,EAAE,GAAG;EAChB,cAAc,EAAE,SAAS;CAC1B",
-    "sources": [
-        "h3-heading.scss"
-    ],
-    "names": [],
-    "file": "h3-heading.css"
-}

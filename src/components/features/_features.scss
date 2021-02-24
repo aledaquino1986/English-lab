@@ -1,0 +1,19 @@
+.section-features {
+  padding: 20rem 0;
+  background-image: linear-gradient(
+      to right top,
+      rgba($color-primary, 0.5),
+      $color-secondary
+    ),
+    url("../../assets/images/flag.jpg");
+  background-size: cover;
+  background-position: top;
+
+  transform: skewY(-7deg);
+
+  & > * {
+    transform: skewY(7deg);
+  }
+
+  margin-top: -10rem;
+}
