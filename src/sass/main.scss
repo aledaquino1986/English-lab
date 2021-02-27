@@ -6,8 +6,7 @@
 @import "base/animation";
 @import "base/typography";
 @import "base/utilities";
-@import "abstract/variables";
-
+@import "./abstract/variables";
 @import "./layout/grid";
 
 @import "../components/atoms/h1-heading/h1-heading";
@@ -20,4 +19,6 @@
 @import "../components/header/header";
 @import "../components/about/about";
 @import "../components/features/features";
+@import "../components/tours/tours";
+@import "../components/atoms/card/card";
 @import "../pages/homepage";
