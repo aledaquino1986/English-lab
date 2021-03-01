@@ -431,6 +431,29 @@ header .logo-box .logo {
   margin-bottom: 2rem;
 }
 
+.section-stories {
+  padding: 2rem 0;
+  background-color: whitesmoke;
+  position: relative;
+}
+
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0.35;
+  overflow: hidden;
+}
+
+.bg-video__content {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .section-features {
   padding: 20rem 0;
   background-image: -webkit-gradient(linear, left bottom, right top, from(rgba(5, 1, 22, 0.5)), to(#2a9ec3)), url("../../assets/images/flag.jpg");
@@ -480,18 +503,7 @@ header .logo-box .logo {
 }
 
 .card__side--front {
-  background-color: blue;
-}
-
-.card__side--back {
-  background-color: orangered;
-  -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
-}
-
-.card__side--back-1 {
-  background-image: -webkit-gradient(linear, left bottom, right top, from(rgba(5, 1, 22, 0.5)), to(#2a9ec3));
-  background-image: linear-gradient(to right top, rgba(5, 1, 22, 0.5), #2a9ec3);
+  background-color: #fff;
 }
 
 .card:hover .card__side--front {
@@ -511,12 +523,23 @@ header .logo-box .logo {
   -webkit-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
           clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+  height: 23rem;
+  background-size: cover;
 }
 
 .card__picture--1 {
   background-image: -webkit-gradient(linear, left bottom, right top, from(#050116), to(#2a9ec3)), url("../../../assets/images/flag.jpg");
   background-image: linear-gradient(to right top, #050116, #2a9ec3), url("../../../assets/images/flag.jpg");
-  height: 23rem;
+}
+
+.card__picture--2 {
+  background-image: -webkit-gradient(linear, left bottom, right top, from(#ff7730), to(#ffb900)), url("../../../assets//images/class1.jpg");
+  background-image: linear-gradient(to right top, #ff7730, #ffb900), url("../../../assets//images/class1.jpg");
+}
+
+.card__picture--3 {
+  background-image: -webkit-gradient(linear, left bottom, right top, from(#5643fa), to(#2998ff)), url("../../../assets/images/class3.jpg");
+  background-image: linear-gradient(to right top, #5643fa, #2998ff), url("../../../assets/images/class3.jpg");
 }
 
 .card__heading {
@@ -540,5 +563,155 @@ header .logo-box .logo {
 .card__heading-span--1 {
   background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(5, 1, 22, 0.85)), to(rgba(42, 158, 195, 0.85)));
   background-image: linear-gradient(to right bottom, rgba(5, 1, 22, 0.85), rgba(42, 158, 195, 0.85));
+}
+
+.card__heading-span--2 {
+  background-image: -webkit-gradient(linear, left bottom, right top, from(#ff7730), to(#ffb900));
+  background-image: linear-gradient(to right top, #ff7730, #ffb900);
+}
+
+.card__heading-span--3 {
+  background-image: -webkit-gradient(linear, left bottom, right top, from(#5643fa), to(#2998ff));
+  background-image: linear-gradient(to right top, #5643fa, #2998ff);
+}
+
+.card__details {
+  padding: 2rem;
+}
+
+.card__details ul {
+  list-style: none;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.card__details ul li {
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+
+.card__details ul li:not(:last-child) {
+  border-bottom: 1px solid #050116;
+}
+
+.card__side--back {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.card__side--back-1 {
+  background-image: -webkit-gradient(linear, left bottom, right top, from(rgba(5, 1, 22, 0.5)), to(#2a9ec3));
+  background-image: linear-gradient(to right top, rgba(5, 1, 22, 0.5), #2a9ec3);
+}
+
+.card__side--back-2 {
+  background-image: -webkit-gradient(linear, left bottom, right top, from(rgba(86, 67, 250, 0.5)), to(#2998ff));
+  background-image: linear-gradient(to right top, rgba(86, 67, 250, 0.5), #2998ff);
+}
+
+.card__side--back-3 {
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(42, 158, 195, 0.5)), to(#2998ff));
+  background-image: linear-gradient(to right bottom, rgba(42, 158, 195, 0.5), #2998ff);
+}
+
+.card__cta {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 90%;
+  text-align: center;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.card__cta .card__price-box {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 8rem;
+}
+
+.card__cta .card__price-only {
+  font-size: 2.4rem;
+  text-transform: uppercase;
+}
+
+.card__cta .card__price-value {
+  font-size: 6rem;
+  font-weight: 100;
+}
+
+.story {
+  width: 75%;
+  margin: 0 auto;
+  -webkit-box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.5);
+          box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.5);
+  border-radius: 3px;
+  padding: 6rem;
+  -webkit-transform: skew(-12deg);
+          transform: skew(-12deg);
+  margin-top: 10rem;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.story__shape {
+  width: 15rem;
+  height: 15rem;
+  float: left;
+  position: relative;
+  overflow: hidden;
+  shape-outside: circle(50% at 50% 50%);
+  -webkit-shape-outside: circle(50% at 50% 50%);
+  clip-path: circle(50% at 50% 50%);
+  -webkit-clip-path: circle(50% at 50% 50%);
+  -webkit-transform: translateX(-3rem) skew(12deg);
+          transform: translateX(-3rem) skew(12deg);
+}
+
+.story__caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -20%);
+          transform: translate(-50%, -20%);
+  color: #fff;
+  text-align: center;
+  font-size: 1.7rem;
+  text-transform: uppercase;
+  opacity: 0;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+.story:hover .story__caption {
+  opacity: 1;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.story:hover .story__img {
+  opacity: 1;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-filter: blur(4px) brightness(70%);
+          filter: blur(4px) brightness(70%);
+}
+
+.story__img {
+  height: 100%;
+}
+
+.story__text {
+  -webkit-transform: skew(12deg);
+          transform: skew(12deg);
+}
+
+.story .story__img {
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
 }
 /*# sourceMappingURL=main.css.map */
