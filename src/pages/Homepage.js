@@ -4,6 +4,7 @@ import About from "../components/about/About";
 import Features from "../components/features/Features";
 import Tours from "../components/tours/Tours";
 import Stories from "../components/stories/Stories";
+import Booking from "../components/booking/Booking";
 
 const Homepage = () => {
   return (
@@ -13,6 +14,7 @@ const Homepage = () => {
       <Features />
       <Tours />
       <Stories />
+      <Booking />
     </div>
   );
 };
